@@ -26,6 +26,8 @@ namespace SchoolLibrary
             this.author = author;
             this.isLoan = isLoan;
         }
+
+        //פעולות מאחזרות
         public int GetCode() { return code; }
         public string GetTitle() { return title; }
         public Date GetPublish() { return publish; }
@@ -33,7 +35,5 @@ namespace SchoolLibrary
         public string GetDescription() { return description; }
         public string GetAuthor() { return author; }
         public bool IsLoan() { return isLoan; }
-            
-
     }
 }
