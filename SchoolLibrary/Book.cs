@@ -27,6 +27,17 @@ namespace SchoolLibrary
             this.isLoan = isLoan;
         }
 
+        public Book(Book other)
+        {
+            this.code = other.code;
+            this.title = other.title;
+            this.publish = new Date(other.publish);
+            this.isEdu = other.isEdu;
+            description = other.description;
+            author = other.author;
+            isLoan = other.isLoan;
+        }
+
         //פעולות מאחזרות
         public int GetCode() { return code; }
         public string GetTitle() { return title; }
