@@ -41,5 +41,14 @@ namespace SchoolLibrary
         public void SetCity(string city) { this.city = city; }
         public void SetPBox(int pBox) { this.pBox = pBox; }
 
+        //פעולת תאור העצם
+        public override string ToString()
+        {
+            return "Street: " + this.street +
+                    " house number: " + this.houseNum +
+                    " city: " + this.city +
+                    " p.o.b: " + this.pBox;
+        }
+
     }
 }

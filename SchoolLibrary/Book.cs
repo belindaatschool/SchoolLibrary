@@ -38,6 +38,16 @@ namespace SchoolLibrary
             isLoan = other.isLoan;
         }
 
+        public Book(int code, string title)
+        {
+            this.code = code;
+            this.title = title;
+            this.publish = new Date(2022,1,1);
+            this.isEdu = false;
+            this.description = "no description";
+            this.author = "";
+            this.isLoan = false;
+        }
         //פעולות מאחזרות
         public int GetCode() { return code; }
         public string GetTitle() { return title; }
@@ -46,5 +56,16 @@ namespace SchoolLibrary
         public string GetDescription() { return description; }
         public string GetAuthor() { return author; }
         public bool IsLoan() { return isLoan; }
+
+        //פעולת תאור העצם
+        public override string ToString()
+        {
+            return "Code: " + code +
+                    " title: " + title +
+                    " publisher: " + publish +
+                    " description: " + description +
+                    " auther: " + author +
+                    " is loaned: " + isLoan;
+        }
     }
 }

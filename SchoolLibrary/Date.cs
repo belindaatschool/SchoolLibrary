@@ -31,5 +31,10 @@
         public void SetMonth(int month) { this.month = month; }
         public void setDay(int day) { this.day = day; }
 
+        //פעולת תאור העצם
+        public override string ToString()
+        {
+            return this.day + "/" + this.month + "/" + this.year;
+        }
     }
 }
